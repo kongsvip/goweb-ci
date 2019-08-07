@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build-demo') {
       steps {
-        sh 'mvn clean install'
+        sh 'go build main.go'
       }
     }
   }
