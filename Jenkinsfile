@@ -6,5 +6,10 @@ pipeline {
         sh 'go build main.go'
       }
     }
+    stage('test') {
+      steps {
+        sh 'echo "stage test"'
+      }
+    }
   }
 }
